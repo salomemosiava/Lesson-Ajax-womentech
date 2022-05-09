@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="post-wraper" id="post-block"></div>
+
+    <div class="overlay" id="overlay">
+        <div id="content"></div>
+        <div id="close"> X </div>
+    </div>
+
+    <div class="add-post" id="add-post">  </div>
+    <div id="overlay-add" class="overlay-add">
+        <div id="close-2"> X </div>
+        <form id="form" action="">
+            <div>
+                <div><label for=""> Title </label></div>
+                <input id="title" type="text">
+            </div>
+            <div>
+                <div><label for=""> Description </label></div>
+                <textarea name="Description" id="body" placeholder="Description"></textarea>
+            </div>
+            <button>პოსტის დამატება</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

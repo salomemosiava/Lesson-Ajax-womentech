@@ -1,0 +1,117 @@
+.post-wraper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.posts {
+    background-color: #4c94ff;
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(110, 110, 110, 0.473);
+    text-align: center;
+    display: block;
+}
+.posts:hover {
+    border-radius: 50px 10px 5em / 50px 30px 50%;
+    background-color: #ffe54c;
+}
+.overlay, .overlay-add{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 50px;
+    border-radius:  50px 30px 50%;;
+    max-width: 500px;
+    width: 80%;
+    height: 50%;
+    background-color: black;
+    opacity: 80%;
+    display: none;
+    box-sizing: border-box;
+    color: white;    
+}
+
+.active {
+    display: block;
+}
+#close, #close-2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+}
+#close:hover,
+#close-2:hover,
+#close-2:focus
+#close:focus {
+  color: #ffe54c;
+  cursor: pointer;
+}
+
+.delete, button {
+    width: 130px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.473);
+}
+.hide {
+    display: none;
+}
+
+.add-post {
+    max-width: 30px;
+    width: 100%;
+    height: 35px;
+    font-size: 30px;
+    padding: 13px 20px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: rgba(141, 255, 10, 0);
+    margin: 10px auto;
+    text-align: center;
+}
+
+.add-post:after {
+    box-sizing: border-box;
+    padding-top: 13px;
+    content: "+";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: -7px;
+    transition: 0.2s;
+}
+
+.add-post:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+#form {
+    display: flex;  
+    flex-direction: column;
+    gap: 50px;
+    align-content: space-between;
+}
+#body {
+    height: 200px;
+    width: 90%;
+}
+
+* {
+    outline: none;
+}
