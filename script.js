@@ -133,7 +133,7 @@ form.addEventListener('submit', function(event) {
     .then((response) => response.json())
     .then((json) => console.log(json));
         console.log(item);
-    item.id = mainWraperPost.childNodes.length +=1;
+    item.id = mainWraperPost.children.length +=1;
     createPost(item);
     postOverlay.classList.remove('active');
 })
