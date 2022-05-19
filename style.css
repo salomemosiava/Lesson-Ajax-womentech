@@ -60,6 +60,7 @@
     border-radius: 20px;
     border: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
 }
 .hide {
     display: none;
